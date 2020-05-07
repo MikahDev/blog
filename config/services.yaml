@@ -25,3 +25,8 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # Adding new specific constroller for questions
+    App\Controller\Question\:
+        resource: '../src/Controller/Question'
+        tags: ['controller.service_arguments']
